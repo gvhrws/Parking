@@ -128,8 +128,8 @@ padding-left: 500px;
 
     <div id="personalInfo" class="info-section"></div>
     <div id="lmvInfo" class="info-section"></div>
-    <div id="twoInfo-1" class="info-section"></div>
-    <div id="twoInfo-2" class="info-section"></div>
+    <div id="twoInfo" class="info-section"></div>
+    <div id="twoInfoo" class="info-section"></div>
   </div>
 
   <script>
@@ -152,19 +152,19 @@ padding-left: 500px;
         <img src="${data.lmvImage}" alt="LMV Image">
       `;
 
-      document.getElementById("twoInfo-1").innerHTML = `
+      document.getElementById("twoInfo").innerHTML = `
         <h3>Two-Wheeler - (1)</h3>
         <p><b>Company & Model:</b> ${data.twoCompany}</p>
         <p><b>Vehicle Type:</b> ${data.twoType}</p>
         <p><b>Registration No:</b> ${data.twoReg}</p>
-        <img src="${data.twoImage}" alt="Two-Wheeler - (1) Image">
+        <img src="${data.twoImage}" alt="Two-Wheeler (1) Image">
       `;
-      document.getElementById("twoInfo-2").innerHTML = `
+      document.getElementById("twoInfoo").innerHTML = `
         <h3>Two-Wheeler - (2)</h3>
         <p><b>Company & Model:</b> ${data.threeCompany}</p>
         <p><b>Vehicle Type:</b> ${data.threeType}</p>
-        <p><b>Registration No:</b> ${data.threereg}</p>
-        <img src="${data.threeImage}" alt="Two-Wheeler - (2) Image">
+        <p><b>Registration No:</b> ${data.threeReg}</p>
+        <img src="${data.threeImage}" alt="Two-Wheeler (2) Image">
       `;
     }
   </script>
@@ -185,4 +185,3 @@ padding-left: 500px;
   
 </body>
 </html>
-
