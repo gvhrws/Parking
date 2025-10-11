@@ -129,6 +129,7 @@ padding-left: 500px;
     <div id="personalInfo" class="info-section"></div>
     <div id="lmvInfo" class="info-section"></div>
     <div id="twoInfo" class="info-section"></div>
+    <div id="twoInfo" class="info-section"></div>
   </div>
 
   <script>
@@ -157,6 +158,13 @@ padding-left: 500px;
         <p><b>Vehicle Type:</b> ${data.twoType}</p>
         <p><b>Registration No:</b> ${data.twoReg}</p>
         <img src="${data.twoImage}" alt="Two-Wheeler Image">
+      `;
+      document.getElementById("twoInfo").innerHTML = `
+        <h3>Two-Wheeler</h3>
+        <p><b>Company & Model:</b> ${data.threeCompany}</p>
+        <p><b>Vehicle Type:</b> ${data.threeType}</p>
+        <p><b>Registration No:</b> ${data.threeReg}</p>
+        <img src="${data.threeImage}" alt="Two-Wheeler Image">
       `;
     }
   </script>
