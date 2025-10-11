@@ -74,18 +74,57 @@ padding-left: 500px;
       margin-bottom: 10px;
       
 }
+/* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+      border-bottom: 2px solid #b95c00;
+      background-color: #fff;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #b95c00;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      font-size: 35px;
+      color: #555;
+      font-weight: bold;
+      margin-top: 3px;
+    }
+
+    header img {
+      width: 80px;
+      height: auto;
+    }
+@media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+ header img {
+        margin-top: 15px;
+        align-self: center;
+      }
+    
   </style>
 </head>
 <body>
 
-<!-- Society Header -->
-  <div class="society-header">
-    <div class="society-title">
+<!-- Header -->
+  <header>
+    <div>
       <h1>GOLDEN VALLEY HEIGHTS</h1>
-      <h3>Residential Welfare Society</h3>
+      <p>Residential Welfare Society</p>
     </div>
-    <img src="https://i.ibb.co/8gqdWhJT/Logi.png" alt="Society Building">
-  </div>
+    <img src="https://i.ibb.co/8gqdWhJT/Logi.png" alt="Society Logo">
+  </header>
 
   <title>Vehicle Information</title>
   <style>
@@ -168,20 +207,13 @@ padding-left: 500px;
       `;
     }
   </script>
-<!----Middle-->
-<div class="Middle">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<h3> </h3>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</div>
-<div class="top-bar text-center">
-    Plot No 101-103, Rodu Ram Nagar, Patrakar Colony, Mansarovar, Jaipur, Rajasthan. 302020<br>
-    Email: <a href="mailto:gvrhw.society.jpr@gmail.com">gvrhw.society.jpr@gmail.com</a><br>
-    <b>Sanstha Aadhaar Number (SAN):</b> 8006540008000538
-    &nbsp;&nbsp;&nbsp;
-    <span class="highlight">Society Registration Number:</span> COOP/2024/JAIPUR/500098
-  </div>
-
+<!-- Footer -->
+  <footer>
+    Plot No 101-103, Rodu Ram Nagar, Patrakar Colony, Mansarovar, Jaipur, Rajasthan - 302020<br>
+    Email: <a href="mailto:gvrwh.society.jpr@gmail.com">gvrwh.society.jpr@gmail.com</a><br>
+    <b>Sanstha Aadhaar Number (SAN):</b> 8006540008000638 |
+    <b>Society Registration Number:</b> COOP/2024/JAIPUR/500098
+  </footer>
   
 </body>
 </html>
