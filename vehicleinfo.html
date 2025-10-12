@@ -194,7 +194,7 @@ padding-left: 500px;
         <p><b>Name/ नाम :</b> ${data.name}</p>
         <p><b>Flat No./ फ्लैट नं :</b> ${data.flat}</p>
         <p><b>Resident Status/ निवासी विवरण :</b> ${data.resident}</p>
-        <p><b>Contact/ संपर्क :</b> ${data.contact}</p>
+        <p><b>Contact/ संपर्क :</b> ${data.contact} ${data.contact ? `<a class="call-btn" href="tel:${data.contact}">📞 Call</a>` : ""}</p>
       `;
 
       document.getElementById("lmvInfo").innerHTML = `
