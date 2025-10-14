@@ -125,7 +125,10 @@ padding-left: 500px;
         margin-top: 15px;
         align-self: center;
       }
-    
+
+
+
+
   </style>
 </head>
 <body>
@@ -172,6 +175,56 @@ padding-left: 500px;
       border-radius: 8px;
       margin-top: 10px;
     }
+.reg {
+width-left: 50%;
+text-align: center;
+margin: 0 auto;
+    bottom: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: blue;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+   transition: 0.3s;
+  }
+  .reg:hover { background: green; }
+.logout {
+  position: fixed;           /* Keeps it always visible at bottom */
+  bottom: 150px;              /* 30px above bottom edge */
+  left: 50%;                 /* Center horizontally */
+  transform: translateX(-50%);
+  background: #d62828;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  z-index: 1000;             /* Keeps it above everything */
+}
+
+.logout:hover {
+  background: #a4161a;
+}
+
+.M-T {
+font-weight: bold;
+font-style: italic;
+	color: blue;
+}    
+
+.M-F {
+	font-weight: bold;
+	font-style: italic;
+	color: black;
+}
+
   </style>
 </head>
 <body>
@@ -193,7 +246,8 @@ padding-left: 500px;
         <h3>Personal Information</h3>
         <p><b>Name/ नाम :</b> ${data.name}</p>
         <p><b>Flat No./ फ्लैट नं :</b> ${data.flat}</p>
-        <p><b>Resident Status/ निवासी विवरण :</b> ${data.resident}</p>
+        <p><b>Resident Status/ निवासी विवरण :</b> <span id="Xtext" class="M-T">${data.resident}</span></p>
+        
         <p><b>Contact/ संपर्क :</b> ${data.contact} ${data.contact ? `<a class="call-btn" href="tel:${data.contact}">📞 Call</a>` : ""}</p>
       `;
 
@@ -220,7 +274,19 @@ padding-left: 500px;
         <img src="${data.tImage}" alt="Two-Wheeler (2) Image">
       `;
     }
+ function logout() {
+    localStorage.removeItem("sessionUser");
+    window.location.href = "index.html";
+  }
   </script>
+<br>
+<br>
+ <a href="hh.html" class="reg" onclick="hh.html">Search by Registration No.</a>
+<br>
+<br>
+ <a href="#" class="logout" onclick="logout()">Logout</a>	
+<br>
+<br>
 <!-- Footer -->
   <footer>
     Plot No 101-103, Rodu Ram Nagar, Patrakar Colony, Mansarovar, Jaipur, Rajasthan - 302020<br>
