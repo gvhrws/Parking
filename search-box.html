@@ -268,15 +268,21 @@ font-style: italic;
 	color: blue;
 }
 
-@keyframes h3 {
-  50% {
-    opacity: 0; /* At 50% of the animation, the text will be invisible */
-  }
-}	  
-h3 {
-  animation: blinker 1s linear infinite; /* Apply 'blinker' animation, 1s duration, linear timing, infinite repetition */
-}
-	  
+ h3.blink {
+      color: #00b300;          /* You can change the color */
+      font-weight: bold;
+      animation: blink 1s infinite; /* Animation name, duration, infinite loop */
+    }
+
+    /* Keyframes for blink effect */
+    @keyframes blink {
+      0%, 50%, 100% {
+        opacity: 1;
+      }
+      25%, 75% {
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -293,8 +299,8 @@ h3 {
  <!-- Main Section -->
   <section class="main">
     <h2>Search by Registration Number</h2>
-    <h3><br>Please do not make any gap or space in between the registration number, and it should be in capital letters only, like</br> <span id="Xtext" class="raj">RJ14AB0000.</span></h3>
-    <h3><br>कृपया पंजीकरण संख्या के बीच कोई अंतराल या स्थान न छोड़ें, और यह केवल बड़े अक्षरों में होना चाहिए, जैसे की</br> <span id="Xtext" class="raj">RJ14AB0000.</span></h3>  	
+    <h3 class="blink"><br>Please do not make any gap or space in between the registration number, and it should be in capital letters only, like</br> <span id="Xtext" class="raj">RJ14AB0000.</span></h3>
+    <h3class="blink"><br>कृपया पंजीकरण संख्या के बीच कोई अंतराल या स्थान न छोड़ें, और यह केवल बड़े अक्षरों में होना चाहिए, जैसे की</br> <span id="Xtext" class="raj">RJ14AB0000.</span></h3>  	
     <div class="login-box">
       <h3>Search</h3>
       <input type="text" id="userId" placeholder="Registration No." required />
