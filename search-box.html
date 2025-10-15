@@ -278,6 +278,16 @@ font-style: italic;
         opacity: 0;
 	  }
     }
+	.blink1 {
+      animation: blink 1s infinite;
+    }
+
+    /* Keyframes for blink effect */
+    @keyframes blink1 {
+      50%{ 
+        opacity: 0;
+	  }
+    }  
   </style>
 </head>
 <body>
@@ -295,9 +305,8 @@ font-style: italic;
   <section class="main">
     <h2>Search by Registration Number</h2>
     <h3 class="blink">Please do not make any gap or space in between the registration number, and it should be in capital letters only, like<span id="Xtext" class="raj">RJ14AB0000.</span></h3>
-    <h3 class="blink">कृपया पंजीकरण संख्या के बीच कोई अंतराल या स्थान न छोड़ें, और यह केवल बड़े अक्षरों में होना चाहिए, जैसे की<span id="Xtext" class="raj">RJ14AB0000.</span></h3>  	
-    <br> </br>
-	  <div class="login-box">
+    
+ <div class="login-box">
       <h3>Search</h3>
       <input type="text" id="userId" placeholder="Registration No." required />
 
